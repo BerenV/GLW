@@ -1,4 +1,4 @@
-# Tigerstop cutlist GUI written in Python
+# Tigerstop cutlist GUI
 
 Python UI based on tkinter. Still in progress with features requested.
 
