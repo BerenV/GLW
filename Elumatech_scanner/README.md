@@ -1,0 +1,5 @@
+# Elumatech_scanner
+
+This is some basic documentation for the barcode scanner interface I built for the main Elumatech double cut saw. One Raspberry Pi Pico has wires soldered between its USB connector and the USB connector of the scanner receiver. It's running the .uf2 file which I believe was provided as a precompiled example in the Pico documentation. I don't have the actual code that was used to compile it. Anyway, this basically listens to the USB HID keystroke commands sent by the barcode receiver, and spits the characters out over UART serial (pin 1) @115200 baud. The second Pico is running the Arduino .ino sketch and listens to those, looks for a float (the part length in mm) and stores it in a variable. If it is greater than 400mm, it uses the MouseAbsolute library to move the mouse to the coordinates of the red STOP button, clicks it, waits 1.5s for the message to clear, types in the length, waits 0.5s, and clicks the START button.
+
+It has been refined to now include six different cases, setting the saw angles automatically and applying an offset if required. These cases are defined in the Arduino code.
