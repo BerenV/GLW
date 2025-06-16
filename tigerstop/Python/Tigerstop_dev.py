@@ -178,7 +178,7 @@ def background_task():
 def getInput():
     global reopenFlag
     while 1==1:
-        scanNumber = tk.simpledialog.askfloat('Barcode entry window', 'Scan barcode').focus_force()
+        scanNumber = tk.simpledialog.askfloat('Barcode entry window', 'Scan barcode')
         if not scanNumber: # 'Cancel'
             reopenFlag = 0
             return
