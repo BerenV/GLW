@@ -1,5 +1,0 @@
-Work done on 10 June 2025
-
-Added autostart routine to ~/.config/autostart/touchscreen.desktop
-
-All modificatinos done in the touchsreen_fix.sh file on the desktop; modify it accordingly
