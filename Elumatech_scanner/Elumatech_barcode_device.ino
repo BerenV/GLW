@@ -1,6 +1,6 @@
 /*
 This program runs on a Raspberry Pi Pico connected via USB to the Elumatech saw computer. Another Pico is connected via USB to the barcode receiver, and translates the HID commands into plaintext which it spits out over UART serial at 115200 baud. The Pico running this program receives and parses the data.
-Updated 26 February 2025
+Updated 6 October 2025
 */
 
 #include <MouseAbsolute.h>
