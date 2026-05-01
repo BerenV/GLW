@@ -152,6 +152,16 @@ void moveSaw(float leng, int angCase) {
       dontpressstart = 1;  // don't press start to encourage user to notice and add spacer
       leng = leng + SHORTCUT_OFFSET;
       break;
+    case 7:  // door left (/|)
+      angleL = 45;
+      angleR = 90;
+      dontpressstart = 0;
+      break;
+    case 8:  // door right (|\)
+      angleL = 90;
+      angleR = 45;
+      dontpressstart = 0;
+      break;
     default:
       angleL = 45;
       angleR = 45;
